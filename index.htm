@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Data</title>
+    <link rel="stylesheet" href="countries.css">
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="theme-toggle" class="theme-btn">
+            <span>&#127769;</span> Light mode
+        </button>
+    </header>
+
+    <main>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="&#128269 Search for a country...">
+            <select id="region-select">
+                <option value="all">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Antarctic">Antarctic</option>
+                <option value="Antarctic Ocean">Antarctic Ocean</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Polar">Polar</option>
+            </select>
+        </div>
+
+        <div id="countries-container" class="grid-container">
+            </div>
+    </main>
+
+    <script src="countries.js"></script>
+</body>
+</html>
