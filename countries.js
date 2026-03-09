@@ -27,8 +27,10 @@ function displaycountries(countries) {
         let countryname = country.name;
 
         card.innerHTML =
-            "<img src='" + flag + "' alt='Flag of " + countryname + "'>" +
-            "<div class='card-details'>" +
+            `<a href="country-details.htm?numericCode=${country.numericCode}">
+             <img src='${flag}' alt='Flag of ${countryname}'>
+            </a>
+            <div class='card-details'>` +
             `<h2>${countryname}</h2>` +
             `<p>Population: <span>${population}</span></p>` +
             `<p>Region: <span>${region}</span></p>` +
@@ -68,5 +70,6 @@ function filterCountries() {
 
 searchInput.addEventListener('input', filterCountries);
 regionSelect.addEventListener('change', filterCountries);
+
 
 fetchCountries();
