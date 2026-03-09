@@ -15,7 +15,7 @@ main > a {
 
 .country-details-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
 }
 
@@ -94,4 +94,5 @@ main > a {
         flex-direction: row;
         align-items: center;
     }
+
 }
